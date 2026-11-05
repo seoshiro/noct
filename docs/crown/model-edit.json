@@ -173,13 +173,13 @@
     },
     {
       "name": "Edition_Engraving",
-      "triangles": 3908
+      "triangles": 539
     },
     {
       "name": "NOCT_Foil_Rule",
       "triangles": 12
     }
   ],
-  "glb_bytes": 1201224,
-  "triangles": 50620
+  "glb_bytes": 1134324,
+  "triangles": 47251
 }

@@ -1,0 +1,80 @@
+{
+  "built_in_image_generations": 2,
+  "higgsfield_image_cost": 0,
+  "ingredient_master": {
+    "format": "png",
+    "mediaType": "image/png",
+    "width": 2172,
+    "height": 724,
+    "space": "srgb",
+    "channels": 4,
+    "depth": "uchar",
+    "density": 72,
+    "isProgressive": false,
+    "isPalette": false,
+    "bitsPerSample": 8,
+    "hasProfile": false,
+    "hasAlpha": true,
+    "autoOrient": {
+      "width": 2172,
+      "height": 724
+    }
+  },
+  "files": [
+    {
+      "path": "public/media/noct-crown-reference.png",
+      "bytes": 1767278,
+      "sha256": "96e5095e33fe9920b4c3720e3e5ffdc5bc0d832d8d3992eb485cadff4d0137ed"
+    },
+    {
+      "path": "public/media/crown-ingredients-master.png",
+      "bytes": 1729705,
+      "sha256": "1a9798eb633e1c24af8cf75e9c19298ee87b505c544ad5629760023d9865fd23"
+    },
+    {
+      "path": "public/media/crown-geranium.webp",
+      "bytes": 94838,
+      "sha256": "e5a9c446b81f30ab77de807b8828367287b63fbce3805bd9267211c298a1b76f"
+    },
+    {
+      "path": "public/media/crown-tonka.webp",
+      "bytes": 59664,
+      "sha256": "d89234197b5a3f449cba2f7545aecd54f0279d25486ecbd9678bb1c6c8983b72"
+    },
+    {
+      "path": "public/media/crown-sandalwood.webp",
+      "bytes": 56672,
+      "sha256": "bc590d537060819448ba2efad5e82b149f1074b3a34496c67173160d298bd6c0"
+    },
+    {
+      "path": "public/media/crown-product-ember.webp",
+      "bytes": 43094,
+      "sha256": "4fa6d8d84dac2243416948c081765438ba9de01d5725721bbee532d514d59729"
+    },
+    {
+      "path": "public/media/crown-product-rain.webp",
+      "bytes": 53720,
+      "sha256": "1e49fd61a3d25a1caee89167b58159abdb9fb4590da14108ac0a15e0f0cc8ae7"
+    },
+    {
+      "path": "public/media/crown-product-veil.webp",
+      "bytes": 53424,
+      "sha256": "6175db861ddd7beceb541f196145a4d8cb6750032e61cf639c987647a6796130"
+    },
+    {
+      "path": "art/crown/tripo-original.glb",
+      "bytes": 2738392,
+      "sha256": "43840deab337de128ff0938aedf0c81610008b2cbe20296f2713d45a150017be"
+    },
+    {
+      "path": "art/crown/noct-crown.blend",
+      "bytes": 4744054,
+      "sha256": "5be00017f807437f2206a388bea0d2174c311dd69aae6b22db5f3d5c4adfc3b9"
+    },
+    {
+      "path": "public/models/noct-crown.glb",
+      "bytes": 1217420,
+      "sha256": "69383e3d03f39f870e804ac3f08823168943443265d8326717a41fe46595cb26"
+    }
+  ]
+}

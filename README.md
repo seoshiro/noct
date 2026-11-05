@@ -1,4 +1,18 @@
-# NOCT — interactive 3D preview
+# NOCT — Crown / scroll preview
+
+**Current evaluation preview:** https://seoshiro.github.io/noct-crown-preview/
+
+**Current recordings, closeups and three note states:** https://seoshiro.github.io/noct-crown-preview/review/
+
+This branch, `noct-crown-scroll-preview`, replaces hand-operated actions with one reversible native-scroll story: a restrained turn, crown clearance, atomizer press, one deterministic cloud, geranium, tonka bean and sandalwood, then selection. It uses one Three.js scene. EN/RU, sizes, persistent cart, quantities and the three-distinct-sample set are preserved. Reduced motion and WebGL fallback retain sequential notes and shopping. The previous Kling film opens only on request as an archive.
+
+The required source model came from one Higgsfield Tripo H3.1 job, then was repaired and optimized in Blender. [Original GLB](art/crown/tripo-original.glb), [editable Blender file](art/crown/noct-crown.blend), [runtime GLB](public/models/noct-crown.glb), [full report and costs](docs/crown/RESULT.md). Total authorized spend **49.5 / 120**, remaining **70.5 credits**. No purchases.
+
+Local URL: `http://127.0.0.1:5190/noct-crown-preview/`. `npm run build`, `npm run test:cart`, `npm test`, `npm run audit:touch`, `npm run record:3d`. Set `NOCT_CROWN_URL` for a deployment. Inspection routes: `?studio=1&view=front`, `view=quarter`, `view=crown`; fallback: `?static=1`.
+
+Production and the following earlier preview are preserved. The new preview has its own [deployment repository](https://github.com/seoshiro/noct-crown-preview). Production replacement requires user evaluation.
+
+## Archived first 3D preview
 
 **Evaluation preview:** https://seoshiro.github.io/noct-3d-preview/
 

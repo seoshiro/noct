@@ -1,0 +1,6 @@
+import sharp from 'sharp';import fs from 'node:fs';import crypto from 'node:crypto';
+const master='public/media/crown-ingredients-master.png',m=await sharp(master).metadata();
+const names=['geranium','tonka','sandalwood'];for(let i=0;i<3;i++){const left=Math.floor(m.width*i/3),right=Math.floor(m.width*(i+1)/3);const crop=await sharp(master).extract({left,top:0,width:right-left,height:m.height}).toBuffer();await sharp(crop).trim().resize(440,440,{fit:'contain',background:{r:0,g:0,b:0,alpha:0}}).webp({quality:92}).toFile(`public/media/crown-${names[i]}.webp`)}
+await sharp('public/media/noct-crown-reference.png').resize({height:1200}).webp({quality:88}).toFile('public/media/crown-poster.webp');
+const files=['public/media/noct-crown-reference.png',master,...names.map(n=>`public/media/crown-${n}.webp`),'public/media/crown-poster.webp','art/crown/tripo-original.glb','art/crown/noct-crown.blend','public/models/noct-crown.glb'];
+const report={built_in_image_generations:2,higgsfield_image_cost:0,ingredient_master:m,files:files.map(path=>{const data=fs.readFileSync(path);return {path,bytes:data.length,sha256:crypto.createHash('sha256').update(data).digest('hex')}})};fs.writeFileSync('docs/crown/assets.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report));

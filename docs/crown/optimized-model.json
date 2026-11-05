@@ -1,0 +1,19 @@
+{
+  "gold_parts_merged": 21,
+  "exported_nodes": [
+    "Body_Lacquer",
+    "Spray_Origin",
+    "Crown_Cap",
+    "Collar_Gold",
+    "Atomizer_Stem",
+    "Atomizer_Head",
+    "Nozzle_Hole",
+    "Crown_Gold",
+    "Crown_Inner_Sleeve",
+    "NOCT_Engraving",
+    "Edition_Engraving",
+    "NOCT_Foil_Rule"
+  ],
+  "glb_bytes": 1217420,
+  "source_blend_preserved": true
+}

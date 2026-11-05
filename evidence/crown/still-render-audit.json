@@ -1,32 +1,147 @@
 {
-  "base": "http://127.0.0.1:5190/noct-crown-preview/",
+  "base": "https://seoshiro.github.io/noct-crown-preview/",
   "report": [
     {
       "status": "ready",
       "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
-      "triangles": 101246,
-      "calls": 64,
-      "frames": 2,
+      "triangles": 47253,
+      "calls": 11,
+      "frames": 3,
       "view": "front",
-      "modelLoads": 1
+      "modelLoads": 1,
+      "progress": 0,
+      "cloudCount": 0,
+      "capOpen": 0,
+      "headPress": 0,
+      "active": true,
+      "frameTimes": [],
+      "renderTimes": [
+        123.10000002384186,
+        7.399999976158142,
+        1.4000000953674316
+      ],
+      "anchors": [
+        {
+          "x": 747.9438221506834,
+          "y": 345.87834815813846
+        },
+        {
+          "x": 747.9438221506834,
+          "y": 345.87834815813846
+        },
+        {
+          "x": 747.9438221506834,
+          "y": 345.87834815813846
+        }
+      ],
+      "bounds": {
+        "body": {
+          "left": 549.6907510852022,
+          "top": 382.30092929743694,
+          "right": 890.3092489147978,
+          "bottom": 835.3475645511494
+        },
+        "crown": {
+          "left": 590.3016356714518,
+          "top": 80.8635391739625,
+          "right": 849.6983643285482,
+          "bottom": 378.7978704248641
+        }
+      }
     },
     {
       "status": "ready",
       "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
-      "triangles": 101246,
-      "calls": 64,
+      "triangles": 94508,
+      "calls": 24,
       "frames": 2,
       "view": "quarter",
-      "modelLoads": 1
+      "modelLoads": 1,
+      "progress": 0,
+      "cloudCount": 0,
+      "capOpen": 0,
+      "headPress": 0,
+      "active": true,
+      "frameTimes": [],
+      "renderTimes": [
+        55,
+        11.5
+      ],
+      "anchors": [
+        {
+          "x": 751.8168948118646,
+          "y": 346.5291202102963
+        },
+        {
+          "x": 751.8168948118646,
+          "y": 346.5291202102963
+        },
+        {
+          "x": 751.8168948118646,
+          "y": 346.5291202102963
+        }
+      ],
+      "bounds": {
+        "body": {
+          "left": 526.7092812456549,
+          "top": 380.2333929052009,
+          "right": 913.2907187543451,
+          "bottom": 849.6892701413934
+        },
+        "crown": {
+          "left": 541.8626645239495,
+          "top": 72.39869233479868,
+          "right": 898.1373070419571,
+          "bottom": 379.9479267448879
+        }
+      }
     },
     {
       "status": "ready",
       "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
-      "triangles": 97322,
-      "calls": 60,
+      "triangles": 93953,
+      "calls": 20,
       "frames": 2,
       "view": "crown",
-      "modelLoads": 1
+      "modelLoads": 1,
+      "progress": 0,
+      "cloudCount": 0,
+      "capOpen": 0,
+      "headPress": 0,
+      "active": true,
+      "frameTimes": [],
+      "renderTimes": [
+        6.600000023841858,
+        16.399999976158142
+      ],
+      "anchors": [
+        {
+          "x": 781.3038503876905,
+          "y": 617.3977081840263
+        },
+        {
+          "x": 781.3038503876905,
+          "y": 617.3977081840263
+        },
+        {
+          "x": 781.3038503876905,
+          "y": 617.3977081840263
+        }
+      ],
+      "bounds": {
+        "body": {
+          "left": 324.4003221770455,
+          "top": 645.1456565429381,
+          "right": 1115.5996778229544,
+          "bottom": 1646.0213177833089
+        },
+        "crown": {
+          "left": 353.26842857259066,
+          "top": 97.5899670019279,
+          "right": 1086.73153351717,
+          "bottom": 747.0763189278618
+        }
+      }
     }
   ],
   "errors": []

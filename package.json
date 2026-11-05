@@ -10,10 +10,10 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "playwright test --config playwright.3d.config.ts",
-    "audit:touch": "node scripts/3d-mobile-audit.mjs",
-    "record:3d": "node scripts/3d-record.mjs",
-    "test:cart": "node --test tests/cart.test.ts"
+    "test": "playwright test --config playwright.crown.config.ts",
+    "audit:touch": "node scripts/crown-layout-audit.mjs",
+    "record:3d": "node scripts/crown-record.mjs",
+    "test:cart": "node --test tests/cart.test.ts tests/crown-timeline.test.ts"
   },
   "keywords": [],
   "type": "module",

@@ -1,0 +1,30 @@
+00:02.594  blend            | Read blend: "C:\Users\gokusen\Documents\Codex\2026-11-05\task-2\noct\art\crown\noct-crown.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+23:58:55 | INFO: Starting glTF 2.0 export
+23:58:55 | INFO: Extracting primitive: Cylinder.002
+23:58:55 | INFO: Primitives created: 1
+23:58:55 | INFO: Extracting primitive: Cylinder.003
+23:58:55 | INFO: Primitives created: 1
+23:58:55 | INFO: Extracting primitive: Cylinder.001
+23:58:55 | INFO: Primitives created: 1
+23:58:55 | INFO: Extracting primitive: Body_Lacquer
+23:58:55 | INFO: Primitives created: 1
+23:58:55 | INFO: Extracting primitive: Cylinder
+23:58:55 | INFO: Primitives created: 1
+23:58:55 | INFO: Extracting primitive: Cylinder.007
+23:58:55 | INFO: Primitives created: 1
+23:58:55 | INFO: Extracting primitive: Cylinder.009
+23:58:55 | INFO: Primitives created: 1
+23:58:55 | INFO: Extracting primitive: Text.001
+23:58:55 | INFO: Primitives created: 1
+23:58:55 | INFO: Extracting primitive: Text
+23:58:55 | INFO: Primitives created: 1
+23:58:55 | INFO: Extracting primitive: Cube.097
+23:58:55 | INFO: Primitives created: 1
+23:58:55 | INFO: Finished glTF 2.0 export in 0.15640616416931152 s
+
+CROWN_OPTIMIZED {"gold_parts_merged": 21, "exported_nodes": ["Body_Lacquer", "Spray_Origin", "Crown_Cap", "Collar_Gold", "Atomizer_Stem", "Atomizer_Head", "Nozzle_Hole", "Crown_Gold", "Crown_Inner_Sleeve", "NOCT_Engraving", "Edition_Engraving", "NOCT_Foil_Rule"], "glb_bytes": 1217420, "source_blend_preserved": true}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

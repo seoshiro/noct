@@ -110,8 +110,9 @@ def lettering(name,text,size,z):
  bpy.ops.object.text_add(location=(0,-front_depth-.004,z),rotation=(math.pi/2,0,0));o=bpy.context.object;o.name=name;o.data.body=text;o.data.align_x='CENTER';o.data.size=size;o.data.extrude=.0007;o.data.bevel_depth=.0003;o.data.resolution_u=5
  font='C:/Windows/Fonts/times.ttf'
  if os.path.exists(font):o.data.font=bpy.data.fonts.load(font)
+ if name=='Edition_Engraving':o.data.resolution_u=2;o.data.extrude=0;o.data.bevel_depth=0
  active(o);bpy.ops.object.convert(target='MESH');assign(o,gold);return o
-lettering('NOCT_Engraving','N O C T',.19,-.36);lettering('Edition_Engraving','0 1',.073,-.73)
+lettering('NOCT_Engraving','N O C T',.19,-.36);lettering('Edition_Engraving','EAU DE PARFUM',.046,-.73)
 bpy.ops.mesh.primitive_cube_add(size=1,location=(0,-front_depth-.005,-.59));rule=bpy.context.object;rule.name='NOCT_Foil_Rule';rule.dimensions=(.25,.003,.004);active(rule);bpy.ops.object.transform_apply(location=False,rotation=False,scale=True);assign(rule,gold)
 
 # Export named parts; keep untouched Tripo and a complete studio in the .blend.

@@ -1,0 +1,50 @@
+{
+  "recordedAt": "2026-11-05T19:24:12.190Z",
+  "browser": "Chrome, headless, native browser wheel/touch synthesis",
+  "results": [
+    {
+      "name": "desktop",
+      "base": "https://seoshiro.github.io/noct-crown-preview/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "mobileEmulation": false,
+      "lang": "en",
+      "end": {
+        "progress": 0.9999634962147259,
+        "cloud": 0,
+        "cap": 0
+      },
+      "reverse": 0.00003777985483572075,
+      "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "modelLoads": 1,
+      "canvasCount": 1,
+      "language": "en",
+      "video": "evidence/crown/recordings/desktop-forward-back.webm",
+      "errors": []
+    },
+    {
+      "name": "mobile",
+      "base": "https://seoshiro.github.io/noct-crown-preview/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mobileEmulation": true,
+      "lang": "ru",
+      "end": {
+        "progress": 0.9999611452139995,
+        "cloud": 0,
+        "cap": 0
+      },
+      "reverse": 0.000037336158933933644,
+      "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "modelLoads": 1,
+      "canvasCount": 1,
+      "language": "ru",
+      "video": "evidence/crown/recordings/mobile-forward-back.webm",
+      "errors": []
+    }
+  ]
+}

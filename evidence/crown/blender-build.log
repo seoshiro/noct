@@ -1,0 +1,75 @@
+23:58:47 | INFO: Data are loaded, start creating Blender stuff
+23:58:47 | INFO: Blender create Mesh node tripo_mesh_dc636577-ffb2-4b03-b307-e99f6fdfb570
+23:58:47 | INFO: glTF import finished in 0.21s
+C:\Users\gokusen\Documents\Codex\2026-11-05\task-2\noct\scripts\blender\finish_crown.py:25: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.diffuse_color=(*color,1);m.use_nodes=True;p=m.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=(*color,1);p.inputs['Metallic'].default_value=metal;p.inputs['Roughness'].default_value=rough
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+23:58:49 | INFO: Starting glTF 2.0 export
+23:58:49 | INFO: Extracting primitive: Cylinder.002
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Cylinder.003
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Cylinder.001
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Body_Lacquer
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Cylinder
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Cylinder.007
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Sphere
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Sphere.001
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Sphere.002
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Sphere.003
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Sphere.004
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Sphere.005
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Cylinder.009
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Cube.001
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Cylinder.005
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Cylinder.004
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Torus
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Torus.001
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Torus.002
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Torus.003
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Cylinder.006
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Crown_Upright_00
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Crown_Upright_01
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Crown_Upright_02
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Crown_Upright_03
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Crown_Upright_04
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Crown_Upright_05
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Text.001
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Text
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Extracting primitive: Cube.097
+23:58:50 | INFO: Primitives created: 1
+23:58:50 | INFO: Finished glTF 2.0 export in 0.20061135292053223 s
+
+Info: Saved as "noct-crown.blend"
+CROWN_EDIT_COMPLETE {"source_job": "50803787-b7cd-423e-b96b-d4604011f754", "body_profiles": [[-2.284590975309117, 0.9710778589891924, 0.47196424289966205], [-2.2258402895618183, 1.0278834978162035, 0.5102152512722937], [-2.1231134582892675, 1.0304977110808962, 0.5118355950871873], [-1.9433415035623025, 1.0326978567216871, 0.5107529804599549], [-1.5324341784720974, 1.0597922683661354, 0.48809098286635894], [-0.8133463595642384, 1.0966340308746096, 0.4927606056202384], [-0.09425854065637919, 1.1239572895052807, 0.49735727670023216], [0.34233049225196377, 1.1420068110347175, 0.5002536223263346], [0.5477841547970664, 1.1350800184102525, 0.4989188971538616], [0.6761926938877555, 1.0064608176323124, 0.45995773601812967], [0.7789195251603067, 0.7364678321235479, 0.38402413615254277]], "scale": 5.136341563627565, "parts": [{"name": "Body_Lacquer", "triangles": 1532}, {"name": "Crown_Upright_00", "triangles": 668}, {"name": "Crown_Upright_01", "triangles": 668}, {"name": "Crown_Upright_02", "triangles": 668}, {"name": "Crown_Upright_03", "triangles": 668}, {"name": "Crown_Upright_04", "triangles": 668}, {"name": "Crown_Upright_05", "triangles": 668}, {"name": "Collar_Gold", "triangles": 1532}, {"name": "Atomizer_Stem", "triangles": 764}, {"name": "Atomizer_Head", "triangles": 1276}, {"name": "Nozzle_Hole", "triangles": 892}, {"name": "Crown_LowerBand", "triangles": 1532}, {"name": "Crown_KnurlBand", "triangles": 1532}, {"name": "Crown_UpperBand", "triangles": 1532}, {"name": "Crown_Turned_Bead", "triangles": 1920}, {"name": "Crown_Turned_Bead.001", "triangles": 1920}, {"name": "Crown_Turned_Bead.002", "triangles": 1920}, {"name": "Crown_Turned_Bead.003", "triangles": 1920}, {"name": "Crown_Knurl_Detail", "triangles": 10368}, {"name": "Crown_Finial_00", "triangles": 528}, {"name": "Crown_Finial_01", "triangles": 528}, {"name": "Crown_Finial_02", "triangles": 528}, {"name": "Crown_Finial_03", "triangles": 528}, {"name": "Crown_Finial_04", "triangles": 528}, {"name": "Crown_Finial_05", "triangles": 528}, {"name": "Crown_Crescent", "triangles": 1772}, {"name": "Crown_Inner_Sleeve", "triangles": 1276}, {"name": "NOCT_Engraving", "triangles": 7836}, {"name": "Edition_Engraving", "triangles": 539}, {"name": "NOCT_Foil_Rule", "triangles": 12}], "glb_bytes": 1134324, "triangles": 47251}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
