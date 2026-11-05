@@ -1,0 +1,24 @@
+import {chromium} from '@playwright/test';
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+const base='https://seoshiro.github.io/noct-3d-preview/';
+const browser=await chromium.launch({channel:'chrome',headless:true});
+const p=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[],badResponses=[],requests=[];
+p.on('pageerror',e=>errors.push(e.message));p.on('response',r=>{if(r.status()>=400)badResponses.push({url:r.url(),status:r.status()})});p.on('request',r=>requests.push(r.url()));
+await p.goto(base+'?lang=en');await p.waitForFunction(()=>window.__NOCT_3D__?.status==='ready');await p.waitForTimeout(1100);
+await p.screenshot({path:'evidence/3d/public-desktop.jpg',quality:94});
+const opening=await p.evaluate(()=>({lang:document.documentElement.lang,model:window.__NOCT_3D__,paint:performance.getEntriesByType('paint').map(x=>({name:x.name,start:x.startTime})),brokenImages:[...document.images].filter(i=>i.complete&&i.naturalWidth===0).map(i=>i.src),fragmentErrors:[...document.querySelectorAll('a[href^="#"]')].filter(a=>!document.querySelector(a.getAttribute('href'))).map(a=>a.getAttribute('href')),portfolio:document.querySelector('footer a[target]')?.href}));
+const videoRequestedBeforeClick=requests.some(x=>x.endsWith('.mp4'));
+if(videoRequestedBeforeClick)throw Error('Film requested before user action');
+await p.locator('.film-strip button').click();await p.locator('video').evaluate(v=>new Promise((resolve,reject)=>{if(v.readyState>=1)return resolve();v.addEventListener('loadedmetadata',resolve,{once:true});v.addEventListener('error',reject,{once:true})}));await p.waitForTimeout(1100);
+const film=await p.locator('video').evaluate(v=>({width:v.videoWidth,height:v.videoHeight,duration:v.duration,time:v.currentTime,paused:v.paused}));const f=await p.evaluate(()=>window.__NOCT_3D__.frames);await p.waitForTimeout(400);const pausedScene=(await p.evaluate(()=>window.__NOCT_3D__.frames))===f;
+await p.keyboard.press('Escape');
+await p.setViewportSize({width:390,height:844});await p.goto(base+'?lang=ru');await p.waitForFunction(()=>window.__NOCT_3D__?.status==='ready');await p.waitForTimeout(1000);await p.screenshot({path:'evidence/3d/public-mobile-ru.jpg',quality:94});
+const glb=await p.request.get(base+'models/noct-bottle.glb'),bytes=await glb.body();const runtime={status:glb.status(),bytes:bytes.length,sha256:crypto.createHash('sha256').update(bytes).digest('hex')};
+const production=await p.request.get('https://seoshiro.github.io/noct/');const productionHtml=await production.text();
+const report={base,opening,videoRequestedBeforeClick,film,pausedScene,runtime,errors,badResponses,production:{status:production.status(),keepsOriginalAssets:!productionHtml.includes('noct-3d-preview')},checkedAt:new Date().toISOString()};
+fs.writeFileSync('evidence/3d/public-audit.json',JSON.stringify(report,null,2));
+console.log(JSON.stringify({...report,opening:{...opening,model:{...opening.model,frameTimes:undefined,renderTimes:undefined}}}));
+if(errors.length||badResponses.length||opening.fragmentErrors.length||!pausedScene||runtime.status!==200||film.width!==1920||film.height!==1080)throw Error('Public audit failed');
+await browser.close();
+

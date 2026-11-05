@@ -1,0 +1,32 @@
+{
+  "price": {
+    "cost": {
+      "credits": 12,
+      "credits_exact": 12
+    },
+    "adjustments": {
+      "medias[0].role": {
+        "requested": "image",
+        "used": "image_references",
+        "reason": "Tripo H3.1 Image to 3D backend expects schema-key media roles"
+      }
+    }
+  },
+  "params": {
+    "model": "tripo_h3_1_image_to_3d",
+    "medias": [
+      {
+        "role": "image",
+        "value": "https://raw.githubusercontent.com/seoshiro/noct/main/public/media/ember.webp"
+      }
+    ],
+    "face_limit": 40000,
+    "texture": false,
+    "pbr": false,
+    "geometry_quality": "detailed",
+    "quad": false,
+    "orientation": "align_image",
+    "auto_size": false,
+    "count": 1
+  }
+}

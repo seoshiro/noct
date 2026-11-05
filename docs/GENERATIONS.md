@@ -1,5 +1,7 @@
 # Generation ledger
 
+**Latest total after the interactive 3D preview:** one Tripo H3.1 image-to-3D operation, job `e34f26e7-1efb-4c58-a8a8-ca22551ca709`, quoted and debited **12 credits**. Prior total 25.5; new total **37.5 / 120**, remaining **82.5**. Balance 584.5 to 572.5. No duplicate or extra paid generation. Original GLB, edited Blender source, runtime asset, exact parameters, hashes and acceptance evidence are preserved in [the 3D report](3d/RESULT.md). The production record below is preserved; in the separate 3D preview the original Kling film is user-started in its own dialog.
+
 Authorization: 120 Higgsfield credits total including all earlier work. No purchases, top-ups or subscriptions. One result at a time; evaluate in site before further generations.
 
 Prior expense: Tripo H3.1 job `4ccf52ab-d439-444b-ad96-3011e8a11578`, 6 credits. Verified against portfolio docs/soft-lotus-v2/SOURCES-AND-COSTS.md, room history and all-state Higgsfield history (one completed job, next_cursor null, no active jobs). Account 604 is supporting evidence, not the authorized budget. Remaining before NOCT: 114.

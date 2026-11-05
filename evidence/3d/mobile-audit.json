@@ -1,0 +1,192 @@
+{
+  "base": "http://127.0.0.1:5180/noct-3d-preview/",
+  "before": {
+    "scroll": 0,
+    "yaw": 0
+  },
+  "horizontal": {
+    "scroll": 0,
+    "yaw": 1.6991535903975705
+  },
+  "reset": {
+    "scroll": 0,
+    "yaw": 0.0009345749129440908
+  },
+  "vertical": {
+    "scroll": 165,
+    "yaw": 6.498798101333859e-11
+  },
+  "layouts": [
+    {
+      "width": 320,
+      "lang": "en",
+      "overflow": 0,
+      "h1": {
+        "x": 22.390625,
+        "y": 150.04940795898438,
+        "width": 247.6875,
+        "height": 157.546875,
+        "top": 150.04940795898438,
+        "right": 270.078125,
+        "bottom": 307.5962829589844,
+        "left": 22.390625
+      },
+      "badCharacters": false,
+      "canvases": 1
+    },
+    {
+      "width": 320,
+      "lang": "ru",
+      "overflow": 0,
+      "h1": {
+        "x": 22.390625,
+        "y": 150.08660888671875,
+        "width": 275.21875,
+        "height": 86.84375,
+        "top": 150.08660888671875,
+        "right": 297.609375,
+        "bottom": 236.93035888671875,
+        "left": 22.390625
+      },
+      "badCharacters": false,
+      "canvases": 1
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "overflow": 0,
+      "h1": {
+        "x": 27.296875,
+        "y": 150.05039978027344,
+        "width": 301.859375,
+        "height": 117.15626525878906,
+        "top": 150.05039978027344,
+        "right": 329.15625,
+        "bottom": 267.2066650390625,
+        "left": 27.296875
+      },
+      "badCharacters": false,
+      "canvases": 1
+    },
+    {
+      "width": 390,
+      "lang": "ru",
+      "overflow": 0,
+      "h1": {
+        "x": 27.296875,
+        "y": 150.05859375,
+        "width": 335.40625,
+        "height": 98.46875,
+        "top": 150.05859375,
+        "right": 362.703125,
+        "bottom": 248.52734375,
+        "left": 27.296875
+      },
+      "badCharacters": false,
+      "canvases": 1
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "overflow": 0,
+      "h1": {
+        "x": 53.75,
+        "y": 150.0740966796875,
+        "width": 594.4375,
+        "height": 165.625,
+        "top": 150.0740966796875,
+        "right": 648.1875,
+        "bottom": 315.6990966796875,
+        "left": 53.75
+      },
+      "badCharacters": false,
+      "canvases": 1
+    },
+    {
+      "width": 768,
+      "lang": "ru",
+      "overflow": 0,
+      "h1": {
+        "x": 53.75,
+        "y": 150.03079223632812,
+        "width": 660.5,
+        "height": 111.09375,
+        "top": 150.03079223632812,
+        "right": 714.25,
+        "bottom": 261.1245422363281,
+        "left": 53.75
+      },
+      "badCharacters": false,
+      "canvases": 1
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "overflow": 0,
+      "h1": {
+        "x": 86.390625,
+        "y": 331.0565185546875,
+        "width": 380.15625,
+        "height": 248.015625,
+        "top": 331.0565185546875,
+        "right": 466.546875,
+        "bottom": 579.0721435546875,
+        "left": 86.390625
+      },
+      "badCharacters": false,
+      "canvases": 1
+    },
+    {
+      "width": 1440,
+      "lang": "ru",
+      "overflow": 0,
+      "h1": {
+        "x": 86.390625,
+        "y": 376.34600830078125,
+        "width": 380.15625,
+        "height": 134,
+        "top": 376.34600830078125,
+        "right": 466.546875,
+        "bottom": 510.34600830078125,
+        "left": 86.390625
+      },
+      "badCharacters": false,
+      "canvases": 1
+    },
+    {
+      "width": 1920,
+      "lang": "en",
+      "overflow": 0,
+      "h1": {
+        "x": 115.1875,
+        "y": 357.0314025878906,
+        "width": 506.875,
+        "height": 195.99996948242188,
+        "top": 357.0314025878906,
+        "right": 622.0625,
+        "bottom": 553.0313720703125,
+        "left": 115.1875
+      },
+      "badCharacters": false,
+      "canvases": 1
+    },
+    {
+      "width": 1920,
+      "lang": "ru",
+      "overflow": 0,
+      "h1": {
+        "x": 115.1875,
+        "y": 365.1568603515625,
+        "width": 506.875,
+        "height": 156.40625,
+        "top": 365.1568603515625,
+        "right": 622.0625,
+        "bottom": 521.5631103515625,
+        "left": 115.1875
+      },
+      "badCharacters": false,
+      "canvases": 1
+    }
+  ],
+  "errors": []
+}

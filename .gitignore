@@ -6,3 +6,5 @@ playwright-report/
 .env*
 evidence/recordings/
 evidence/interactions.webm
+*.blend1
+evidence/3d/recordings/

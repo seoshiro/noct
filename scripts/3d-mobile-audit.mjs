@@ -1,0 +1,33 @@
+import {chromium} from '@playwright/test';
+import fs from 'node:fs';
+const base=process.env.NOCT_3D_URL||'http://127.0.0.1:5180/noct-3d-preview/';
+const browser=await chromium.launch({channel:'chrome',headless:true});
+const context=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true,deviceScaleFactor:2});
+const p=await context.newPage();
+const errors=[];p.on('pageerror',e=>errors.push(e.message));
+await p.goto(base+'?lang=ru');await p.waitForFunction(()=>window.__NOCT_3D__?.status==='ready');await p.waitForTimeout(900);
+await p.screenshot({path:'evidence/3d/mobile-ru-top.jpg',quality:94});
+await p.locator('#hero-sculpture').scrollIntoViewIfNeeded();await p.waitForTimeout(700);
+await p.screenshot({path:'evidence/3d/mobile-ru-bottle.jpg',quality:94});
+const cdp=await context.newCDPSession(p);
+async function swipe(x,y,dx,dy){await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y}]});for(let i=1;i<=20;i++){await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:x+dx*i/20,y:y+dy*i/20}]});await p.waitForTimeout(16)}await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await p.waitForTimeout(700)}
+const before=await p.evaluate(()=>({scroll:scrollY,yaw:window.__NOCT_3D__.yaw}));
+await swipe(115,390,150,3);
+const horizontal=await p.evaluate(()=>({scroll:scrollY,yaw:window.__NOCT_3D__.yaw}));
+if(Math.abs(horizontal.yaw-before.yaw)<.6||Math.abs(horizontal.scroll-before.scroll)>4)throw Error('Horizontal gesture did not rotate cleanly');
+await p.locator('#hero-sculpture .bottle-toolbar button').last().click();await p.waitForTimeout(800);
+const reset=await p.evaluate(()=>({scroll:scrollY,yaw:window.__NOCT_3D__.yaw}));
+await swipe(185,470,2,-180);
+const vertical=await p.evaluate(()=>({scroll:scrollY,yaw:window.__NOCT_3D__.yaw}));
+if(vertical.scroll-reset.scroll<80||Math.abs(vertical.yaw-reset.yaw)>.05)throw Error('Vertical gesture did not preserve native scrolling');
+await p.locator('#hero-sculpture').scrollIntoViewIfNeeded();await p.waitForTimeout(700);
+await p.locator('#hero-sculpture .cap-toggle').click();await p.waitForTimeout(850);
+await p.screenshot({path:'evidence/3d/mobile-ru-open.jpg',quality:94});
+await p.locator('#hero-sculpture .spray-button').click();await p.waitForTimeout(700);
+await p.locator('#ritual').scrollIntoViewIfNeeded();await p.waitForTimeout(700);
+await p.screenshot({path:'evidence/3d/mobile-ru-notes.jpg',quality:93});
+const layouts=[];
+for(const width of [320,390,768,1440,1920])for(const lang of ['en','ru']){await p.setViewportSize({width,height:width>900?1000:844});await p.goto(base+'?lang='+lang);await p.waitForFunction(()=>window.__NOCT_3D__?.status==='ready');await p.waitForTimeout(350);const result=await p.evaluate(()=>({width:innerWidth,overflow:document.documentElement.scrollWidth-innerWidth,h1:document.querySelector('h1').getBoundingClientRect().toJSON(),badCharacters:document.body.innerText.includes('\uFFFD'),canvases:document.querySelectorAll('canvas').length}));layouts.push({width,lang,...result});if(result.overflow>1||result.badCharacters||result.canvases!==1)throw Error('Layout audit failed '+JSON.stringify(layouts.at(-1)))}
+fs.writeFileSync('evidence/3d/mobile-audit.json',JSON.stringify({base,before,horizontal,reset,vertical,layouts,errors},null,2));
+console.log(JSON.stringify({gestures:{before,horizontal,reset,vertical},layouts:layouts.length,errors}));
+await browser.close();

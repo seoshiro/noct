@@ -1,0 +1,34 @@
+{
+  "model": "tripo_h3_1_image_to_3d",
+  "job_id": "e34f26e7-1efb-4c58-a8a8-ca22551ca709",
+  "status": "completed",
+  "imported_reference_id": "107a9cbf-9cab-47a6-b35a-4f186015626b",
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3E5G2A3SehelVArAZlo5WHsGiG5/hf_20261105_131437_e34f26e7-1efb-4c58-a8a8-ca22551ca709.glb",
+  "cost": {
+    "quoted": 12,
+    "actual": 12,
+    "balance_before": 584.5,
+    "balance_after": 572.5,
+    "prior_total": 25.5,
+    "cumulative_total": 37.5,
+    "authorized_total": 120,
+    "authorized_remaining": 82.5
+  },
+  "files": [
+    {
+      "path": "art/tripo/noct-tripo-original.glb",
+      "bytes": 1135460,
+      "sha256": "eec78f0658ef7a3c2e599f21862c76c65552a57cc40ad56f144f9c6683698f30"
+    },
+    {
+      "path": "art/blender/noct-bottle.blend",
+      "bytes": 2575514,
+      "sha256": "d5206300b76d6ecc83845015b23629f77a9e34e948dbc2147bc263c3c7280711"
+    },
+    {
+      "path": "public/models/noct-bottle.glb",
+      "bytes": 940728,
+      "sha256": "0351c704e9feeee783ffad1b8481f8556b2ad7c5ee56d72ba4d6e3f3d8f874e9"
+    }
+  ]
+}

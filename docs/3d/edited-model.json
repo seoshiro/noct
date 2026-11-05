@@ -1,0 +1,97 @@
+{
+  "source_job": "e34f26e7-1efb-4c58-a8a8-ca22551ca709",
+  "body_method": "convex envelope of generated vertices; voxel cleanup; actual interior subtraction and neck passage",
+  "cap_method": "generated cap vertex envelope; depth correction and underside recess",
+  "parts": [
+    {
+      "name": "Body_Glass",
+      "vertices": 5014,
+      "polygons": 8849,
+      "dimensions": [
+        4.190481185913086,
+        1.1778285503387451,
+        2.72045636177063
+      ]
+    },
+    {
+      "name": "Amber_Liquid",
+      "vertices": 5043,
+      "polygons": 6970,
+      "dimensions": [
+        3.750760078430176,
+        0.824020266532898,
+        1.2453917264938354
+      ]
+    },
+    {
+      "name": "Stone_Cap",
+      "vertices": 5061,
+      "polygons": 6770,
+      "dimensions": [
+        2.624746799468994,
+        1.1169039011001587,
+        0.7942140102386475
+      ]
+    },
+    {
+      "name": "Copper_Collar",
+      "vertices": 512,
+      "polygons": 450,
+      "dimensions": [
+        0.8799999952316284,
+        0.8799999952316284,
+        0.20000000298023224
+      ]
+    },
+    {
+      "name": "Atomizer_Stem",
+      "vertices": 384,
+      "polygons": 338,
+      "dimensions": [
+        0.23000000417232513,
+        0.23000000417232513,
+        0.23999999463558197
+      ]
+    },
+    {
+      "name": "Atomizer_Head",
+      "vertices": 512,
+      "polygons": 450,
+      "dimensions": [
+        0.5099999904632568,
+        0.5099999904632568,
+        0.23999999463558197
+      ]
+    },
+    {
+      "name": "Nozzle_Hole",
+      "vertices": 64,
+      "polygons": 34,
+      "dimensions": [
+        0.09600000083446503,
+        0.09600000083446503,
+        0.02199999988079071
+      ]
+    },
+    {
+      "name": "Dip_Tube",
+      "vertices": 192,
+      "polygons": 170,
+      "dimensions": [
+        0.05000000074505806,
+        0.05000000074505806,
+        2.5999999046325684
+      ]
+    },
+    {
+      "name": "NOCT_Engraving",
+      "vertices": 4684,
+      "polygons": 4097,
+      "dimensions": [
+        0.5136669278144836,
+        0.10207181423902512,
+        0.004399999976158142
+      ]
+    }
+  ]
+}

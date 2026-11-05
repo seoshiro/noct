@@ -1,0 +1,1057 @@
+.scene-page {
+  background: #140e16;
+  position: relative;
+  isolation: isolate;
+  --cream: #f0e7da;
+}
+.bottle-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.bottle-canvas canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.scene-page main {
+  position: relative;
+  z-index: 1;
+}
+.scene-page footer {
+  position: relative;
+  z-index: 2;
+  background: #140e16;
+}
+.stage {
+  position: relative;
+  padding: 120px 6%;
+  min-height: 900px;
+  background: transparent;
+}
+.hero-stage {
+  height: 100svh;
+  min-height: 890px;
+  max-height: 1200px;
+  padding-top: 130px;
+  display: grid;
+  grid-template-columns: 30% 42% 24%;
+  column-gap: 2%;
+  align-items: center;
+}
+.preview-label {
+  position: absolute;
+  top: 139px;
+  left: 6%;
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: #9c858b;
+}
+.hero-editorial {
+  padding-top: 20px;
+  align-self: center;
+  z-index: 4;
+}
+.hero-editorial > .eyebrow {
+  font-size: 8px;
+  max-width: 290px;
+  line-height: 1.9;
+}
+.hero-editorial h1 {
+  font-size: clamp(62px, 5.8vw, 99px);
+  line-height: 0.99;
+  letter-spacing: -0.045em;
+  margin: 30px 0;
+}
+.hero-editorial h1 > span {
+  display: block;
+}
+.hero-editorial h1 em {
+  color: #cfaa88;
+}
+.hero-editorial > p:not(.eyebrow) {
+  font-size: 12px;
+  line-height: 1.95;
+  max-width: 280px;
+  color: var(--muted);
+}
+.hero-editorial .text-button {
+  font-size: 10px;
+  line-height: 1.8;
+  max-width: 270px;
+  margin-top: 25px;
+  gap: 15px;
+}
+.hero-choice {
+  z-index: 4;
+  padding-left: 8px;
+  margin-top: 50px;
+}
+.hero-choice > .eyebrow {
+  font-size: 7px;
+  line-height: 1.8;
+}
+.hero-choice h2 {
+  font-size: 58px;
+  letter-spacing: -0.03em;
+  margin-top: 15px;
+}
+.current-mood {
+  font:
+    italic 22px "Night Serif",
+    Georgia,
+    serif;
+  color: var(--accent);
+  margin: 10px 0 24px;
+}
+.hero-scents {
+  display: flex;
+  gap: 14px;
+  padding: 17px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.hero-scents button {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: start;
+  padding: 6px 0;
+  font-size: 10px;
+}
+.hero-scents small {
+  font-size: 7px;
+  color: var(--muted);
+}
+.hero-scents [aria-pressed="true"] {
+  color: var(--accent);
+}
+.purchase-controls .sizes {
+  margin-top: 25px;
+}
+.purchase-controls .sizes button {
+  min-width: 0;
+  padding: 10px 14px;
+  font-size: 10px;
+  flex: 1;
+}
+.purchase-controls .primary {
+  width: 100%;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 18px;
+}
+.purchase-controls .primary > span {
+  font-size: 11px;
+}
+.hero-choice > .text-button {
+  width: 100%;
+  font-size: 10px;
+  margin-top: 15px;
+}
+.concept-price {
+  font-size: 8px;
+  color: var(--muted);
+  margin-top: 12px;
+  line-height: 1.7;
+}
+.stage-foot {
+  position: absolute;
+  bottom: 30px;
+  left: 6%;
+  right: 6%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  color: #ad999d;
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  line-height: 1.8;
+}
+.scene-anchor {
+  position: relative;
+  z-index: 2;
+  height: 550px;
+  min-width: 0;
+  align-self: center;
+  pointer-events: none;
+}
+.bottle-touch {
+  position: absolute;
+  inset: 0 0 80px;
+  pointer-events: auto;
+  cursor: grab;
+  touch-action: pan-y;
+  border-radius: 40%;
+  outline-offset: -20px !important;
+}
+.bottle-touch:active {
+  cursor: grabbing;
+}
+.bottle-toolbar {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  pointer-events: auto;
+  white-space: nowrap;
+}
+.bottle-toolbar button {
+  background: #140e16c9;
+  border: 1px solid #f0e7da22;
+  min-height: 44px;
+  padding: 10px 11px;
+  font-size: 8px;
+  letter-spacing: 0.02em;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+.bottle-toolbar button:first-child,
+.bottle-toolbar button:last-child {
+  font-size: 20px;
+  min-width: 40px;
+  padding: 6px;
+}
+.bottle-toolbar .cap-toggle[aria-pressed="true"] {
+  border-color: var(--accent);
+}
+.bottle-toolbar button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+.bottle-toolbar button:active {
+  transform: none;
+}
+.drag-hint {
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 8px;
+  line-height: 1.7;
+  letter-spacing: 0.05em;
+  color: #bba9a8;
+}
+.fallback-bottle {
+  position: absolute;
+  inset: 0 0 80px;
+  width: 100%;
+  height: calc(100% - 80px);
+  object-fit: contain;
+  transition: opacity 0.35s ease;
+}
+.scene-page[data-renderer="ready"] .fallback-bottle {
+  opacity: 0;
+}
+.ritual-stage {
+  display: grid;
+  grid-template-columns: 47% 44%;
+  gap: 9%;
+  align-items: center;
+  min-height: 980px;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+.ritual-copy h2 {
+  font-size: clamp(58px, 5.2vw, 82px);
+  line-height: 1.03;
+  letter-spacing: -0.03em;
+  margin: 27px 0;
+}
+.ritual-copy > p:not(.eyebrow) {
+  font-size: 13px;
+  line-height: 1.9;
+  color: var(--muted);
+  max-width: 420px;
+}
+.ritual-feedback {
+  margin-top: 28px;
+  font-size: 10px !important;
+  color: #8d7d85 !important;
+  min-height: 20px;
+}
+.ritual-feedback.is-revealed {
+  color: var(--accent) !important;
+}
+.note-layers {
+  margin-top: 22px;
+}
+.note-layer {
+  display: flex;
+  gap: 23px;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  border-top: 1px solid var(--line);
+  padding: 22px 0;
+}
+.note-layer > span:first-child {
+  font-size: 8px;
+  color: var(--accent);
+}
+.note-layer h3 {
+  font-size: 28px;
+  line-height: 1.2;
+}
+.note-layer p {
+  font-size: 10px;
+  line-height: 1.9;
+  color: var(--muted);
+  margin-top: 9px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+.note-layers.is-revealed .note-layer p {
+  opacity: 1;
+}
+.note-layer > span:last-child {
+  font-size: 20px;
+  margin-left: auto;
+}
+.select-stage {
+  display: grid;
+  grid-template-columns: 47% 44%;
+  gap: 40px 9%;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  min-height: 1040px;
+}
+.selection-heading {
+  grid-column: 1/3;
+}
+.selection-heading h2 {
+  font-size: clamp(60px, 6vw, 92px);
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin-top: 25px;
+}
+.selection-info {
+  max-width: 490px;
+  width: 100%;
+}
+.selection-info .scent-description {
+  min-height: 82px;
+}
+.selection-info .scent-mood {
+  font-size: 27px;
+}
+.selection-info .purchase-controls .primary {
+  max-width: none;
+}
+.selection-info .text-button {
+  width: 100%;
+  margin-top: 15px;
+}
+.scene-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 30px;
+  gap: 25px;
+}
+.scene-tabs button {
+  font:
+    24px "Night Serif",
+    Georgia,
+    serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid transparent;
+  padding: 15px 0;
+  min-height: 54px;
+}
+.scene-tabs button > span {
+  font:
+    7px "Night Sans",
+    sans-serif;
+  color: var(--muted);
+}
+.scene-tabs [aria-selected="true"] {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+.discover-stage {
+  display: grid;
+  grid-template-columns: 47% 44%;
+  gap: 9%;
+  align-items: center;
+  min-height: 1050px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.discovery-title h2 {
+  font-size: 70px;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+  margin: 25px 0;
+}
+.discovery-title > p:not(.eyebrow) {
+  font-size: 12px;
+  line-height: 1.9;
+  color: var(--muted);
+  max-width: 400px;
+}
+.small-anchor {
+  height: 380px;
+  width: 85%;
+  margin-top: 20px;
+}
+.small-anchor .bottle-toolbar {
+  display: none;
+}
+.small-anchor .drag-hint {
+  bottom: 30px;
+}
+.discover-stage .sample-builder {
+  background: #e9dfd0;
+  color: #281f27;
+  padding: 35px 30px 30px;
+  border-radius: 2px;
+  position: relative;
+  z-index: 4;
+}
+.discover-stage .sample-vials {
+  height: 270px;
+}
+.discover-stage .sample-options button {
+  gap: 8px;
+  font-size: 10px;
+}
+.discover-stage .sample-options small {
+  font-size: 7px;
+}
+.discover-stage .sample-feedback {
+  min-height: 48px;
+}
+.discover-stage .sample-builder > .primary {
+  margin-top: 10px;
+}
+.film-strip {
+  min-height: 470px;
+  position: relative;
+  background: #140e16;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 70px 10%;
+  gap: 12%;
+  z-index: 4;
+  border-top: 1px solid var(--line);
+}
+.film-strip > img {
+  width: 100%;
+  aspect-ratio: 1.55;
+  object-fit: cover;
+  object-position: 75%;
+}
+.film-strip h2 {
+  font-size: 60px;
+  line-height: 1.05;
+  margin: 20px 0;
+  letter-spacing: -0.02em;
+}
+.film-strip p:not(.eyebrow) {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.9;
+}
+.film-strip .text-button {
+  width: 180px;
+  margin-top: 20px;
+}
+.note-image {
+  display: block;
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+.note-narrative {
+  font-size: 13px;
+  line-height: 1.9;
+  color: var(--muted);
+  margin-bottom: 25px;
+}
+.scene-dialog .detail-notes > button {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  border-top: 1px solid var(--line);
+  padding: 20px 0;
+  gap: 20px;
+  color: var(--muted);
+}
+.scene-dialog .detail-notes > button[aria-pressed="true"] {
+  color: var(--cream);
+}
+.scene-dialog .detail-notes > button > span {
+  font-size: 8px;
+  color: var(--accent);
+}
+.scene-dialog .detail-notes .eyebrow {
+  font-size: 8px;
+}
+.scene-dialog .detail-notes div > p:last-child {
+  font-size: 12px;
+  line-height: 1.8;
+  margin-top: 10px;
+}
+.separate-film {
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: block;
+  background: #140e16;
+}
+.set-mark {
+  font:
+    23px/1.1 "Night Serif",
+    Georgia,
+    serif;
+  display: block;
+  padding: 15px;
+  color: var(--accent);
+}
+.scene-lang-ru .hero-editorial h1 {
+  font-size: clamp(55px, 4.7vw, 79px);
+}
+.scene-lang-ru .bottle-toolbar button {
+  font-size: 7px;
+  padding: 10px 8px;
+}
+.scene-lang-ru .bottle-toolbar button:first-child,
+.scene-lang-ru .bottle-toolbar button:last-child {
+  font-size: 20px;
+}
+.scene-lang-ru .hero-choice h2 {
+  font-size: 54px;
+}
+.scene-lang-ru .current-mood {
+  font-size: 22px;
+}
+.scene-lang-ru .discovery-title h2 {
+  font-size: 60px;
+}
+@media (hover: hover) {
+  .bottle-toolbar button:hover {
+    border-color: var(--accent);
+    background: #271a2b;
+  }
+  .note-layer:hover h3 {
+    color: var(--accent);
+  }
+}
+@media (max-width: 1100px) and (min-width: 901px) {
+  .hero-stage {
+    grid-template-columns: 29% 41% 26%;
+    column-gap: 2%;
+  }
+  .hero-editorial h1 {
+    font-size: 62px;
+  }
+  .hero-choice h2 {
+    font-size: 46px;
+  }
+  .bottle-toolbar {
+    gap: 3px;
+  }
+  .bottle-toolbar button {
+    padding: 8px;
+    font-size: 7px;
+  }
+  .scene-anchor {
+    height: 480px;
+  }
+  .small-anchor {
+    height: 330px;
+  }
+  .scene-tabs {
+    gap: 20px;
+  }
+  .scene-tabs button {
+    font-size: 22px;
+  }
+  .discover-stage .sample-builder {
+    padding: 30px 20px;
+  }
+  .scene-lang-ru .hero-editorial h1 {
+    font-size: 52px;
+  }
+}
+@media (max-width: 900px) {
+  .stage {
+    padding-left: 7%;
+    padding-right: 7%;
+    min-height: 0;
+  }
+  .hero-stage {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-height: none;
+    min-height: 1300px;
+    padding-top: 115px;
+    padding-bottom: 65px;
+    align-items: stretch;
+  }
+  .preview-label {
+    top: 105px;
+    left: 7%;
+    font-size: 6px;
+  }
+  .hero-editorial {
+    order: 1;
+    padding-top: 35px;
+    align-self: stretch;
+    display: block;
+  }
+  .hero-editorial > .eyebrow {
+    display: none;
+  }
+  .hero-editorial h1 {
+    font-size: 58px;
+    line-height: 1.01;
+    margin: 0 0 22px;
+    max-width: 90%;
+  }
+  .hero-editorial > p:not(.eyebrow) {
+    font-size: 11px;
+    line-height: 1.8;
+    max-width: 320px;
+  }
+  .hero-editorial .text-button {
+    font-size: 9px;
+    margin-top: 14px;
+    max-width: 100%;
+    border: 0;
+    padding: 0;
+    min-height: 32px;
+    justify-content: start;
+  }
+  .hero-stage > .scene-anchor {
+    order: 2;
+    height: 435px;
+    width: 100%;
+    align-self: stretch;
+    margin-top: 5px;
+  }
+  .hero-choice {
+    order: 3;
+    padding-left: 0;
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 25px;
+    align-items: center;
+  }
+  .hero-choice > .eyebrow {
+    font-size: 7px;
+    grid-column: 1/3;
+  }
+  .hero-choice h2 {
+    font-size: 48px;
+    margin: 12px 0;
+  }
+  .hero-choice .current-mood {
+    font-size: 21px;
+    margin: 0 0 15px;
+    grid-column: 1;
+  }
+  .hero-scents {
+    grid-row: 2/4;
+    grid-column: 2;
+    gap: 14px;
+    justify-content: space-between;
+    border-bottom: 0;
+  }
+  .hero-scents button {
+    font-size: 9px;
+  }
+  .hero-order {
+    grid-column: 1/3;
+  }
+  .hero-choice > .text-button {
+    grid-column: 1/3;
+    margin-top: 15px;
+  }
+  .hero-order .sizes {
+    margin-top: 12px;
+  }
+  .hero-order .sizes legend {
+    font-size: 9px;
+  }
+  .hero-order .sizes button {
+    font-size: 12px;
+    min-height: 44px;
+  }
+  .hero-order .primary {
+    margin-top: 17px;
+  }
+  .stage-foot {
+    left: 7%;
+    right: 7%;
+    bottom: 17px;
+    font-size: 6px;
+    gap: 10px;
+  }
+  .stage-foot > span:last-child {
+    display: none;
+  }
+  .bottle-toolbar {
+    gap: 4px;
+    bottom: 33px;
+  }
+  .bottle-toolbar button {
+    padding: 10px 8px;
+    font-size: 8px;
+  }
+  .bottle-toolbar button:first-child,
+  .bottle-toolbar button:last-child {
+    min-width: 35px;
+  }
+  .drag-hint {
+    font-size: 7px;
+    bottom: 8px;
+  }
+  .ritual-stage {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-top: 65px;
+    padding-bottom: 70px;
+    align-items: stretch;
+  }
+  .ritual-stage > .scene-anchor {
+    height: 400px;
+    order: 2;
+    align-self: stretch;
+    width: 100%;
+  }
+  .ritual-copy {
+    order: 1;
+  }
+  .ritual-copy h2 {
+    font-size: 55px;
+    margin: 24px 0;
+  }
+  .ritual-copy > p:not(.eyebrow) {
+    font-size: 12px;
+  }
+  .ritual-feedback {
+    margin-top: 24px;
+    font-size: 10px !important;
+  }
+  .note-layer {
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .note-layer h3 {
+    font-size: 26px;
+  }
+  .note-layer p {
+    font-size: 10px;
+    margin-top: 7px;
+  }
+  .select-stage {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: stretch;
+    padding-top: 65px;
+    padding-bottom: 80px;
+  }
+  .selection-heading h2 {
+    font-size: 55px;
+    line-height: 1.04;
+  }
+  .select-stage > .scene-anchor {
+    height: 410px;
+    align-self: stretch;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .selection-info {
+    max-width: none;
+  }
+  .selection-info h3 {
+    font-size: 75px;
+  }
+  .scene-tabs {
+    gap: 0;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  .scene-tabs button {
+    font-size: 27px;
+    gap: 10px;
+    padding: 16px 0;
+  }
+  .selection-info .scent-description {
+    font-size: 12px;
+    min-height: 95px;
+  }
+  .selection-info .scent-mood {
+    font-size: 25px;
+  }
+  .selection-info .sizes button {
+    min-height: 47px;
+    font-size: 12px;
+  }
+  .discover-stage {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 70px;
+    padding-bottom: 75px;
+    align-items: stretch;
+  }
+  .discovery-title h2 {
+    font-size: 55px;
+    line-height: 1.02;
+  }
+  .discovery-title > p:not(.eyebrow) {
+    font-size: 12px;
+  }
+  .small-anchor {
+    height: 310px;
+    width: 85%;
+    margin: 25px auto 0;
+    align-self: center;
+  }
+  .discover-stage .sample-builder {
+    padding: 25px 20px;
+    align-self: stretch;
+  }
+  .discover-stage .sample-count {
+    font-size: 9px;
+  }
+  .discover-stage .sample-vials {
+    height: 255px;
+    gap: 36px;
+  }
+  .discover-stage .sample-options button {
+    font-size: 10px;
+  }
+  .film-strip {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 65px 7%;
+  }
+  .film-strip > img {
+    max-height: 290px;
+    object-fit: cover;
+  }
+  .film-strip h2 {
+    font-size: 52px;
+  }
+  .film-strip > .eyebrow {
+    font-size: 8px;
+  }
+  .scene-lang-ru .hero-editorial h1 {
+    font-size: clamp(43px, 12.5vw, 55px);
+    max-width: 100%;
+  }
+  .scene-lang-ru .hero-choice h2 {
+    font-size: 48px;
+  }
+  .scene-lang-ru .current-mood {
+    font-size: 20px;
+  }
+  .scene-lang-ru .bottle-toolbar button {
+    font-size: 7px;
+    padding: 10px 7px;
+  }
+  .scene-lang-ru .bottle-toolbar button:first-child,
+  .scene-lang-ru .bottle-toolbar button:last-child {
+    font-size: 20px;
+  }
+  .scene-lang-ru .ritual-copy h2 {
+    font-size: 48px;
+  }
+  .scene-lang-ru .selection-heading h2 {
+    font-size: 49px;
+  }
+  .scene-lang-ru .discovery-title h2 {
+    font-size: 49px;
+  }
+  .scene-dialog .drawer h2 {
+    font-size: 49px;
+  }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  .hero-stage {
+    min-height: 1400px;
+  }
+  .hero-editorial h1 {
+    font-size: 82px;
+  }
+  .hero-stage > .scene-anchor {
+    height: 560px;
+  }
+  .ritual-stage > .scene-anchor,
+  .select-stage > .scene-anchor {
+    height: 550px;
+  }
+  .small-anchor {
+    height: 380px;
+  }
+  .hero-choice {
+    max-width: 600px;
+    width: 100%;
+    align-self: center;
+  }
+}
+@media (max-width: 360px) {
+  .hero-stage {
+    padding-top: 115px;
+    min-height: 1320px;
+  }
+  .hero-editorial h1 {
+    font-size: 52px;
+  }
+  .hero-stage > .scene-anchor {
+    height: 390px;
+  }
+  .bottle-toolbar {
+    gap: 3px;
+  }
+  .bottle-toolbar button {
+    font-size: 7px;
+    padding: 8px 6px;
+  }
+  .bottle-toolbar button:first-child,
+  .bottle-toolbar button:last-child {
+    min-width: 30px;
+  }
+  .scene-lang-ru .bottle-toolbar button {
+    font-size: 6px;
+    padding: 8px 6px;
+  }
+  .drag-hint {
+    font-size: 6px;
+  }
+  .hero-choice {
+    gap: 0 15px;
+  }
+  .hero-scents {
+    gap: 10px;
+  }
+  .hero-scents button {
+    font-size: 8px;
+  }
+  .ritual-copy h2 {
+    font-size: 49px;
+  }
+  .scene-tabs button {
+    font-size: 24px;
+  }
+  .scene-lang-ru .hero-editorial h1 {
+    font-size: 43px;
+  }
+  .scene-lang-ru .ritual-copy h2 {
+    font-size: 43px;
+  }
+  .scene-lang-ru .discovery-title h2 {
+    font-size: 44px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fallback-bottle,
+  .note-layer p {
+    transition: none;
+  }
+  .bottle-touch {
+    scroll-behavior: auto;
+  }
+}
+.bottle-toolbar button,
+.scene-lang-ru .bottle-toolbar button {
+  font-size: 10px;
+  padding: 10px;
+}
+.bottle-toolbar button:first-child,
+.bottle-toolbar button:last-child,
+.scene-lang-ru .bottle-toolbar button:first-child,
+.scene-lang-ru .bottle-toolbar button:last-child {
+  font-size: 20px;
+}
+.bottle-touch {
+  user-select: none;
+  -webkit-user-select: none;
+}
+.scene-lang-ru .bottle-toolbar button {
+  font-size: 9px;
+}
+@media (max-width: 900px) {
+  .bottle-toolbar button,
+  .scene-lang-ru .bottle-toolbar button {
+    font-size: 9px;
+    padding: 8px;
+  }
+  .bottle-toolbar button:first-child,
+  .bottle-toolbar button:last-child,
+  .scene-lang-ru .bottle-toolbar button:first-child,
+  .scene-lang-ru .bottle-toolbar button:last-child {
+    font-size: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .bottle-toolbar button,
+  .scene-lang-ru .bottle-toolbar button {
+    font-size: 8px;
+    padding: 8px 7px;
+  }
+}
+.bottle-touch {
+  top: -130px;
+}
+
+/* HTML interaction follows the rendered object, including between scroll anchors. */
+.scene-page[data-renderer="ready"] .bottle-toolbar {
+  position: fixed;
+  left: var(--bottle-ui-x);
+  top: var(--bottle-ui-y);
+  bottom: auto;
+}
+.scene-page[data-renderer="ready"] .drag-hint {
+  position: fixed;
+  left: var(--bottle-ui-x);
+  top: calc(var(--bottle-ui-y) + 54px);
+  right: auto;
+  bottom: auto;
+  width: max-content;
+  max-width: 86vw;
+  transform: translateX(-50%);
+}
+.scene-page[data-renderer="ready"] .bottle-touch {
+  position: fixed;
+  left: var(--bottle-hit-x);
+  top: var(--bottle-hit-y);
+  width: var(--bottle-hit-w);
+  height: var(--bottle-hit-h);
+  right: auto;
+  bottom: auto;
+}
+.scene-page[data-renderer="ready"]
+  .scene-anchor:not([data-bottle-active])
+  :is(.bottle-toolbar, .drag-hint, .bottle-touch) {
+  visibility: hidden;
+  pointer-events: none;
+}
+.scene-page .scene-anchor .bottle-touch:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: -20px;
+}
+@media (max-width: 900px) {
+  .bottle-touch {
+    top: -65px;
+  }
+}

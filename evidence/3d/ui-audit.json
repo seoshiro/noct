@@ -1,0 +1,294 @@
+[
+  {
+    "id": "hero-sculpture",
+    "active": false,
+    "bar": {
+      "x": 265.671875,
+      "y": 723.265625,
+      "width": 237.1875,
+      "height": 44,
+      "top": 723.265625,
+      "right": 502.859375,
+      "bottom": 767.265625,
+      "left": 265.671875
+    },
+    "style": "hidden",
+    "buttons": [
+      {
+        "text": "",
+        "r": {
+          "x": 265.671875,
+          "y": 723.265625,
+          "width": 40,
+          "height": 44,
+          "top": 723.265625,
+          "right": 305.671875,
+          "bottom": 767.265625,
+          "left": 265.671875
+        },
+        "visibility": "hidden"
+      },
+      {
+        "text": "",
+        "r": {
+          "x": 311.671875,
+          "y": 723.265625,
+          "width": 90.65625,
+          "height": 44,
+          "top": 723.265625,
+          "right": 402.328125,
+          "bottom": 767.265625,
+          "left": 311.671875
+        },
+        "visibility": "hidden"
+      },
+      {
+        "text": "",
+        "r": {
+          "x": 408.328125,
+          "y": 723.265625,
+          "width": 48.53125,
+          "height": 44,
+          "top": 723.265625,
+          "right": 456.859375,
+          "bottom": 767.265625,
+          "left": 408.328125
+        },
+        "visibility": "hidden"
+      },
+      {
+        "text": "",
+        "r": {
+          "x": 462.859375,
+          "y": 723.265625,
+          "width": 40,
+          "height": 44,
+          "top": 723.265625,
+          "right": 502.859375,
+          "bottom": 767.265625,
+          "left": 462.859375
+        },
+        "visibility": "hidden"
+      }
+    ]
+  },
+  {
+    "id": "ritual-sculpture",
+    "active": false,
+    "bar": {
+      "x": 265.671875,
+      "y": 723.265625,
+      "width": 237.1875,
+      "height": 44,
+      "top": 723.265625,
+      "right": 502.859375,
+      "bottom": 767.265625,
+      "left": 265.671875
+    },
+    "style": "hidden",
+    "buttons": [
+      {
+        "text": "",
+        "r": {
+          "x": 265.671875,
+          "y": 723.265625,
+          "width": 40,
+          "height": 44,
+          "top": 723.265625,
+          "right": 305.671875,
+          "bottom": 767.265625,
+          "left": 265.671875
+        },
+        "visibility": "hidden"
+      },
+      {
+        "text": "",
+        "r": {
+          "x": 311.671875,
+          "y": 723.265625,
+          "width": 90.65625,
+          "height": 44,
+          "top": 723.265625,
+          "right": 402.328125,
+          "bottom": 767.265625,
+          "left": 311.671875
+        },
+        "visibility": "hidden"
+      },
+      {
+        "text": "",
+        "r": {
+          "x": 408.328125,
+          "y": 723.265625,
+          "width": 48.53125,
+          "height": 44,
+          "top": 723.265625,
+          "right": 456.859375,
+          "bottom": 767.265625,
+          "left": 408.328125
+        },
+        "visibility": "hidden"
+      },
+      {
+        "text": "",
+        "r": {
+          "x": 462.859375,
+          "y": 723.265625,
+          "width": 40,
+          "height": 44,
+          "top": 723.265625,
+          "right": 502.859375,
+          "bottom": 767.265625,
+          "left": 462.859375
+        },
+        "visibility": "hidden"
+      }
+    ]
+  },
+  {
+    "id": "selection-sculpture",
+    "active": true,
+    "bar": {
+      "x": 265.671875,
+      "y": 723.265625,
+      "width": 237.1875,
+      "height": 44,
+      "top": 723.265625,
+      "right": 502.859375,
+      "bottom": 767.265625,
+      "left": 265.671875
+    },
+    "style": "visible",
+    "buttons": [
+      {
+        "text": "↶",
+        "r": {
+          "x": 265.671875,
+          "y": 723.265625,
+          "width": 40,
+          "height": 44,
+          "top": 723.265625,
+          "right": 305.671875,
+          "bottom": 767.265625,
+          "left": 265.671875
+        },
+        "visibility": "visible"
+      },
+      {
+        "text": "Return the cap",
+        "r": {
+          "x": 311.671875,
+          "y": 723.265625,
+          "width": 90.65625,
+          "height": 44,
+          "top": 723.265625,
+          "right": 402.328125,
+          "bottom": 767.265625,
+          "left": 311.671875
+        },
+        "visibility": "visible"
+      },
+      {
+        "text": "Spray",
+        "r": {
+          "x": 408.328125,
+          "y": 723.265625,
+          "width": 48.53125,
+          "height": 44,
+          "top": 723.265625,
+          "right": 456.859375,
+          "bottom": 767.265625,
+          "left": 408.328125
+        },
+        "visibility": "visible"
+      },
+      {
+        "text": "⟲",
+        "r": {
+          "x": 462.859375,
+          "y": 723.265625,
+          "width": 40,
+          "height": 44,
+          "top": 723.265625,
+          "right": 502.859375,
+          "bottom": 767.265625,
+          "left": 462.859375
+        },
+        "visibility": "visible"
+      }
+    ]
+  },
+  {
+    "id": "discovery-sculpture",
+    "active": false,
+    "bar": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "style": "hidden",
+    "buttons": [
+      {
+        "text": "↶",
+        "r": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "visibility": "hidden"
+      },
+      {
+        "text": "Return the cap",
+        "r": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "visibility": "hidden"
+      },
+      {
+        "text": "Spray",
+        "r": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "visibility": "hidden"
+      },
+      {
+        "text": "⟲",
+        "r": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "visibility": "hidden"
+      }
+    ]
+  }
+]
