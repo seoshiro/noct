@@ -1,0 +1,30 @@
+{
+  "results": [
+    {
+      "id": "50803787-b7cd-423e-b96b-d4604011f754",
+      "type": "3d",
+      "status": "pending",
+      "model": "tripo_h3_1_image_to_3d",
+      "params": {
+        "prompt": "",
+        "reference_images": [
+          "3953e75d-bbe1-4caf-8908-34b9f9ba8895"
+        ],
+        "face_limit": 100000,
+        "texture": false,
+        "pbr": false,
+        "geometry_quality": "detailed",
+        "quad": false,
+        "orientation": "align_image",
+        "auto_size": false
+      }
+    }
+  ],
+  "adjustments": {
+    "medias[0].role": {
+      "requested": "image",
+      "used": "image_references",
+      "reason": "Tripo H3.1 Image to 3D backend expects schema-key media roles"
+    }
+  }
+}

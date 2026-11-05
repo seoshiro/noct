@@ -1,0 +1,33 @@
+{
+  "base": "http://127.0.0.1:5190/noct-crown-preview/",
+  "report": [
+    {
+      "status": "ready",
+      "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "triangles": 101246,
+      "calls": 64,
+      "frames": 2,
+      "view": "front",
+      "modelLoads": 1
+    },
+    {
+      "status": "ready",
+      "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "triangles": 101246,
+      "calls": 64,
+      "frames": 2,
+      "view": "quarter",
+      "modelLoads": 1
+    },
+    {
+      "status": "ready",
+      "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "triangles": 97322,
+      "calls": 60,
+      "frames": 2,
+      "view": "crown",
+      "modelLoads": 1
+    }
+  ],
+  "errors": []
+}

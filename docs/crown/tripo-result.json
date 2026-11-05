@@ -1,0 +1,16 @@
+{
+  "job": {
+    "index": 0,
+    "job_id": "50803787-b7cd-423e-b96b-d4604011f754",
+    "status": "completed",
+    "type": "3d",
+    "model": "tripo_h3_1_image_to_3d",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3E5G2A3SehelVArAZlo5WHsGiG5/hf_20261105_180324_50803787-b7cd-423e-b96b-d4604011f754.glb"
+  },
+  "quote": 12,
+  "actual_debit": 12,
+  "balance_before": 572.5,
+  "balance_after": 560.5,
+  "total_spent": 49.5,
+  "remaining": 70.5
+}
