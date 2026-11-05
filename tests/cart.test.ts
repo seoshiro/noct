@@ -1,0 +1,9 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {addItem,changeQuantity,normalizeCart,subtotal,validSet} from '../src/cart.ts';
+test('different sizes stay separate; repeated item merges and totals correctly',()=>{let cart=addItem([],'ember',50);cart=addItem(cart,'ember',50);cart=addItem(cart,'ember',100);assert.equal(cart.length,2);assert.equal(subtotal(cart),392);cart=changeQuantity(cart,'ember-50',-1);assert.equal(subtotal(cart),280)});
+test('removing the final unit removes the line',()=>assert.deepEqual(changeQuantity(addItem([],'rain',30),'rain-30',-1),[]));
+test('discovery requires exactly three unique known scents',()=>{assert.equal(validSet(['ember','rain','veil']),true);for(const bad of [[],['ember','ember','rain'],['ember','rain'],['ember','rain','fake']]){assert.equal(validSet(bad),false);assert.deepEqual(addItem([],'discovery',2,bad as never),[])}});
+test('discovery totals and restored identity cannot be forged',()=>{const cart=addItem(addItem([],'veil',30),'discovery',2,['veil','ember','rain']);assert.equal(subtotal(cart),96);const restored=normalizeCart(JSON.parse(JSON.stringify(cart)));assert.deepEqual(restored.find(x=>x.scent==='discovery')?.samples,['ember','rain','veil']);assert.equal(subtotal(restored),96)});
+test('untrusted storage rejects bad quantities, product names, sizes and malformed sets',()=>{assert.deepEqual(normalizeCart(null),[]);assert.deepEqual(normalizeCart([{scent:'rain',size:50,quantity:-1},{scent:'fake',size:50,quantity:1},{scent:'ember',size:3,quantity:1},{scent:'discovery',size:2,quantity:1,samples:['rain','rain','veil']}]),[])});
+test('quantity is capped at 99 even after merging restored duplicates',()=>{const c=normalizeCart([{scent:'ember',size:50,quantity:99},{scent:'ember',size:50,quantity:99}]);assert.equal(c[0].quantity,99);assert.equal(changeQuantity(c,c[0].id,1)[0].quantity,99)});

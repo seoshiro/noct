@@ -1,0 +1,37 @@
+{
+  "video": {
+    "width": 1916,
+    "height": 1080,
+    "duration": 6.041667,
+    "paused": false,
+    "currentTime": 0.5134,
+    "quality": {
+      "total": 162,
+      "dropped": 1
+    }
+  },
+  "errors": [],
+  "images": [
+    {
+      "src": "http://127.0.0.1:5174/noct/media/noct-hero.webp",
+      "loaded": true
+    },
+    {
+      "src": "http://127.0.0.1:5174/noct/media/noct-hero.webp",
+      "loaded": true
+    },
+    {
+      "src": "http://127.0.0.1:5174/noct/media/ember.webp",
+      "loaded": true
+    },
+    {
+      "src": "http://127.0.0.1:5174/noct/media/rain.webp",
+      "loaded": true
+    },
+    {
+      "src": "http://127.0.0.1:5174/noct/media/veil.webp",
+      "loaded": true
+    }
+  ],
+  "horizontalOverflow": false
+}

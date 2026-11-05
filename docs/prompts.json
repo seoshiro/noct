@@ -1,0 +1,18 @@
+{
+  "hero": "Original built-in image: bespoke rounded rectangular smoked glass monolith, concave lens front, 55% amber fill, oval black stone cap, copper collar, tiny NOCT engraving. At x67%, full object 65% image height. Nearly black plum, amber directional light, reflective stone, empty dark left43%. Photoreal medium-format still life. No flowers, hands or extra objects.",
+  "video": {
+    "model": "kling4_0",
+    "mode": "image-to-video",
+    "resolution": "1080p",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "count": 1,
+    "medias": [
+      {
+        "role": "start_image",
+        "value": "https://raw.githubusercontent.com/seoshiro/noct/main/public/media/noct-master.png"
+      }
+    ],
+    "prompt": "A single unbroken six second luxury perfume still-life shot, almost still. Preserve the exact reference bottle geometry, size, position, rounded rectangular silhouette, thick concave front glass, oval black stone cap, thin copper collar, NOCT engraving and amber liquid fill line. Bottle rests fixed on black stone. One broad soft amber studio light moves slowly across the right glass edge, highlights glide smoothly and naturally. Extremely subtle slow camera push in, less than three percent total. A faint background haze drifts very slowly. Keep the entire bottle in frame and keep the left 43 percent dark empty negative space for website text. Locked stable cap, immobile liquid, no liquid ripples, no geometry changes, no warping, no flicker, no extra objects, no particles, no cuts, no text changes, no sound, no music. Rich black plum background and precise warm amber optical reflections. End with a stable composed frame."
+  }
+}

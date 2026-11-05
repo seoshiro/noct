@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+let app=fs.readFileSync('src/App.tsx','utf8');
+app=app.replace("const initialLang=():Lang=>new URLSearchParams(location.search).get('lang')==='ru'?'ru':read('noct-language')==='ru'?'ru':'en';","const initialLang=():Lang=>{const requested=new URLSearchParams(location.search).get('lang');return requested==='en'||requested==='ru'?requested:read('noct-language')==='ru'?'ru':'en'};");
+app=app.replace("type Panel='menu'|'details'|'cart'|null;","type Panel='menu'|'details'|'cart'|null;");
+app=app.replace("const root=useRef", "const [displayPanel,setDisplayPanel]=useState<Panel>(null);\n const root=useRef");
+app=app.replace("document.documentElement.lang=lang;","document.documentElement.lang=lang;const url=new URL(location.href);url.searchParams.set('lang',lang);history.replaceState(null,'',url);");
+app=app.replace("if(panel){if(!d.open)","if(panel){setDisplayPanel(panel);if(!d.open)");
+app=app.replace("lastFocus.current?.focus()","lastFocus.current?.focus({preventScroll:true})");
+app=app.replace("document.getElementById(id)?.scrollIntoView({behavior:reduce?'instant':'smooth'})","const target=document.getElementById(id);if(target){target.tabIndex=-1;lastFocus.current=target;target.scrollIntoView({behavior:reduce?'instant':'smooth'})}");
+app=app.replaceAll("{panel==='menu'&&","{displayPanel==='menu'&&").replaceAll("{panel==='details'&&","{displayPanel==='details'&&").replaceAll("{panel==='cart'&&","{displayPanel==='cart'&&");
+app=app.replace("<span>GLASS</span><i/><span>LIGHT</span><i/><span>SKIN</span>","<span>{lang==='en'?'GLASS':'СТЕКЛО'}</span><i/><span>{lang==='en'?'LIGHT':'СВЕТ'}</span><i/><span>{lang==='en'?'SKIN':'КОЖА'}</span>");
+fs.writeFileSync('src/App.tsx',app);
+let cart=fs.readFileSync('src/cart.ts','utf8').replace("from './catalog'","from './catalog.ts'");fs.writeFileSync('src/cart.ts',cart);
+let css=fs.readFileSync('src/style.css','utf8').replaceAll('url(/noct/fonts/','url(/fonts/');fs.writeFileSync('src/style.css',css);

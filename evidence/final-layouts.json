@@ -1,0 +1,86 @@
+{
+  "url": "http://127.0.0.1:5174/noct/",
+  "layouts": [
+    {
+      "lang": "en",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "headlineWidth": 660,
+      "broken": []
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "height": 1000,
+      "overflow": false,
+      "headlineWidth": 660,
+      "broken": []
+    },
+    {
+      "lang": "en",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "headlineWidth": 660,
+      "broken": []
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "headlineWidth": 335.40625,
+      "broken": []
+    },
+    {
+      "lang": "en",
+      "width": 320,
+      "height": 740,
+      "overflow": false,
+      "headlineWidth": 275.21875,
+      "broken": []
+    },
+    {
+      "lang": "ru",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "headlineWidth": 580,
+      "broken": []
+    },
+    {
+      "lang": "ru",
+      "width": 1440,
+      "height": 1000,
+      "overflow": false,
+      "headlineWidth": 580,
+      "broken": []
+    },
+    {
+      "lang": "ru",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "headlineWidth": 580,
+      "broken": []
+    },
+    {
+      "lang": "ru",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "headlineWidth": 335.40625,
+      "broken": []
+    },
+    {
+      "lang": "ru",
+      "width": 320,
+      "height": 740,
+      "overflow": false,
+      "headlineWidth": 275.21875,
+      "broken": []
+    }
+  ],
+  "errors": []
+}
