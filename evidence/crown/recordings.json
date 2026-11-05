@@ -1,5 +1,5 @@
 {
-  "recordedAt": "2026-11-05T19:24:12.190Z",
+  "recordedAt": "2026-11-05T19:31:50.992Z",
   "browser": "Chrome, headless, native browser wheel/touch synthesis",
   "results": [
     {
@@ -34,11 +34,11 @@
       "mobileEmulation": true,
       "lang": "ru",
       "end": {
-        "progress": 0.9999611452139995,
+        "progress": 0.9999607218510729,
         "cloud": 0,
         "cap": 0
       },
-      "reverse": 0.000037336158933933644,
+      "reverse": 0.00003730463663354593,
       "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
       "modelLoads": 1,
       "canvasCount": 1,

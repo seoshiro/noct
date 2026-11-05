@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-11-05T19:34:05.496Z",
+  "publicPreview": "https://seoshiro.github.io/noct-crown-preview/?lang=en",
+  "review": "https://seoshiro.github.io/noct-crown-preview/review/",
+  "artifacts": [
+    {
+      "url": "https://seoshiro.github.io/noct-crown-preview/review/desktop-forward-back.mp4",
+      "width": 1440,
+      "height": 1000,
+      "duration": 39.36,
+      "played": true,
+      "source": {
+        "path": "evidence/crown/recordings/desktop-forward-back.webm",
+        "bytes": 6399054,
+        "sha256": "ca5bdd828e76fca8eb7b719c28a37054ead8151a2ef859f87efb17aaecdbb1dd"
+      },
+      "output": {
+        "path": "../noct-crown-host/site/review/desktop-forward-back.mp4",
+        "bytes": 1904380,
+        "sha256": "74151b6c290e05c6228e86ed50022d4cd886e0b5411f626ede3fa754fe4d97f7"
+      },
+      "encoding": {
+        "codec": "H.264/libx264",
+        "preset": "slow",
+        "crf": 22,
+        "pixelFormat": "yuv420p",
+        "fps": 25,
+        "audio": false,
+        "fastStart": true,
+        "retimed": false
+      }
+    },
+    {
+      "url": "https://seoshiro.github.io/noct-crown-preview/review/mobile-forward-back.mp4",
+      "width": 390,
+      "height": 844,
+      "duration": 53.16,
+      "played": true,
+      "source": {
+        "path": "evidence/crown/recordings/mobile-forward-back.webm",
+        "bytes": 3312753,
+        "sha256": "536f411a73b120ba20a8a8e7ae1728ec878567c4e329bb672ae50063311a4191"
+      },
+      "output": {
+        "path": "../noct-crown-host/site/review/mobile-forward-back.mp4",
+        "bytes": 1549185,
+        "sha256": "6dea3e827685d156aa3c4a650bbb2f337a3423034111bb9eb0894c0116a976ce"
+      },
+      "encoding": {
+        "codec": "H.264/libx264",
+        "preset": "slow",
+        "crf": 21,
+        "pixelFormat": "yuv420p",
+        "fps": 25,
+        "audio": false,
+        "fastStart": true,
+        "retimed": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "checkedAt": "2026-11-05T19:34:05.496Z",
+  "app": "https://seoshiro.github.io/noct-crown-preview/?lang=en",
+  "appStatus": 200,
+  "review": "https://seoshiro.github.io/noct-crown-preview/review/",
+  "reviewStatus": 200,
+  "fonts": [
+    {
+      "family": "Crown Serif",
+      "status": "loaded"
+    },
+    {
+      "family": "Crown Sans",
+      "status": "loaded"
+    }
+  ],
+  "fastReturn": {
+    "progress": 0.00018428091925321575,
+    "cap": 0,
+    "cloud": 0,
+    "modelLoads": 1,
+    "canvasCount": 1,
+    "openDialogs": 0
+  },
+  "recordings": [
+    {
+      "url": "https://seoshiro.github.io/noct-crown-preview/review/desktop-forward-back.mp4",
+      "width": 1440,
+      "height": 1000,
+      "duration": 39.36,
+      "played": true
+    },
+    {
+      "url": "https://seoshiro.github.io/noct-crown-preview/review/mobile-forward-back.mp4",
+      "width": 390,
+      "height": 844,
+      "duration": 53.16,
+      "played": true
+    }
+  ],
+  "images": [
+    {
+      "url": "https://seoshiro.github.io/noct-crown-preview/review/browser-front.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 54668
+    },
+    {
+      "url": "https://seoshiro.github.io/noct-crown-preview/review/browser-quarter.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 62421
+    },
+    {
+      "url": "https://seoshiro.github.io/noct-crown-preview/review/browser-crown.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 92910
+    },
+    {
+      "url": "https://seoshiro.github.io/noct-crown-preview/review/story-geranium.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 94958
+    },
+    {
+      "url": "https://seoshiro.github.io/noct-crown-preview/review/story-tonka.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 90655
+    },
+    {
+      "url": "https://seoshiro.github.io/noct-crown-preview/review/story-sandalwood.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 88783
+    },
+    {
+      "url": "https://seoshiro.github.io/noct-crown-preview/review/public-desktop.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 96622
+    },
+    {
+      "url": "https://seoshiro.github.io/noct-crown-preview/review/public-mobile-ru.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 41487
+    }
+  ],
+  "errors": [],
+  "failed": []
+}

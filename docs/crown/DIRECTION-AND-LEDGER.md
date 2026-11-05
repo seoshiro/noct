@@ -23,3 +23,8 @@ Use: image reference for one required Tripo job and a fallback poster for the ac
 ## Budget before new Tripo
 
 Previously documented and rechecked spend: lotus 6 + original NOCT Kling 19.5 + first NOCT Tripo 12 = **37.5 / 120**. Current balance **572.5**, unchanged since that debit. This work has launched no new generation or reservation yet. Authorized remainder **82.5**. Exact current Tripo price must be recorded before submission; one job only, then inspect and repair in Blender. No purchases, top-ups or subscriptions.
+
+
+## Settled result
+
+The one new Tripo job completed at 12 credits. Cumulative spend is 49.5 / 120; remaining 70.5. Balance rechecked 560.5, no further jobs submitted. See RESULT.md and tripo-result.json for the settled ledger and verification.
