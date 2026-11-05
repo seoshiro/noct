@@ -33,3 +33,4 @@ Use: the sensory interlude before the collection, three linked fragments. Static
 
 Fragrance product photographs are three crops of the same original master, with CSS color treatments, preserving exact bottle geometry. No extra bottle was generated.
 The built-in image tool returned image bytes without a stable generation ID; no ID has been invented. Both original images and exact prompts are preserved, with SHA256 hashes in asset-hashes.json. Runtime hero film is 1,128,869 bytes after padding to 1920×1080. No additional paid services, purchases, top-ups, trials or subscriptions were used.
+Final public playback audit: 1920×1080, 6.041667 s, 145 frames, two dropped during the audit; playback completes and holds the final frame. See evidence/public-audit.json. No scroll seeking or simultaneous heavy scenes are used.

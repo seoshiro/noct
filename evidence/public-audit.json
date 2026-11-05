@@ -1,0 +1,56 @@
+{
+  "url": "https://seoshiro.github.io/noct/",
+  "status": 200,
+  "film": {
+    "width": 1920,
+    "height": 1080,
+    "duration": 6.041667,
+    "ended": true,
+    "paused": true,
+    "currentTime": 6.041667,
+    "frames": 145,
+    "dropped": 2
+  },
+  "assets": [
+    {
+      "src": "https://seoshiro.github.io/noct/media/noct-hero.webp",
+      "loaded": true
+    },
+    {
+      "src": "https://seoshiro.github.io/noct/media/noct-hero.webp",
+      "loaded": true
+    },
+    {
+      "src": "https://seoshiro.github.io/noct/media/wood.webp",
+      "loaded": true
+    },
+    {
+      "src": "https://seoshiro.github.io/noct/media/stone.webp",
+      "loaded": true
+    },
+    {
+      "src": "https://seoshiro.github.io/noct/media/linen.webp",
+      "loaded": true
+    },
+    {
+      "src": "https://seoshiro.github.io/noct/media/ember.webp",
+      "loaded": true
+    },
+    {
+      "src": "https://seoshiro.github.io/noct/media/rain.webp",
+      "loaded": true
+    },
+    {
+      "src": "https://seoshiro.github.io/noct/media/veil.webp",
+      "loaded": true
+    }
+  ],
+  "portfolio": "https://seoshiro.github.io/",
+  "russianCTA": {
+    "x": 27.296875,
+    "y": 771.734375,
+    "width": 214.046875,
+    "height": 52
+  },
+  "errors": []
+}
