@@ -13,3 +13,4 @@
 
 .skip-link:focus:not(:focus-visible){top:-100px}
 .lang-ru .hero h1{font-size:clamp(60px,5.6vw,90px)}@media(max-width:900px){.lang-ru .hero h1{font-size:clamp(45px,14.1vw,55px);line-height:1.04}}
+@media(max-width:360px){.hero-image{height:420px;object-position:82% 50%}.hero-copy,.lang-ru .hero-copy{padding-top:480px}.hero-shade{height:600px}.film-control{bottom:480px}}
