@@ -55,7 +55,7 @@
         "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
         "timeout": 30000,
         "use": {
-          "baseURL": "http://127.0.0.1:5174/noct/",
+          "baseURL": "https://seoshiro.github.io/noct/",
           "channel": "chrome",
           "viewport": {
             "width": 1440,
@@ -115,12 +115,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2548,
+                  "duration": 3350,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-05T12:31:27.319Z",
+                  "startTime": "2026-11-05T12:35:11.151Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -149,12 +149,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1503,
+                  "duration": 2019,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-05T12:31:30.198Z",
+                  "startTime": "2026-11-05T12:35:14.824Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -183,12 +183,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2434,
+                  "duration": 2645,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-05T12:31:31.725Z",
+                  "startTime": "2026-11-05T12:35:16.868Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -217,12 +217,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2762,
+                  "duration": 3584,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-05T12:31:34.201Z",
+                  "startTime": "2026-11-05T12:35:19.540Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -251,12 +251,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1232,
+                  "duration": 1814,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-05T12:31:36.988Z",
+                  "startTime": "2026-11-05T12:35:23.151Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -274,8 +274,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-05T12:31:26.773Z",
-    "duration": 11727.994999999999,
+    "startTime": "2026-11-05T12:35:10.595Z",
+    "duration": 14674.717999999999,
     "expected": 5,
     "skipped": 0,
     "unexpected": 0,
