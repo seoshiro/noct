@@ -1,0 +1,21 @@
+{
+  "review": "https://seoshiro.github.io/noct-3d-preview/review/",
+  "status": 200,
+  "recordings": [
+    {
+      "url": "https://seoshiro.github.io/noct-3d-preview/review/desktop.mp4",
+      "width": 1440,
+      "height": 1000,
+      "duration": 29.28
+    },
+    {
+      "url": "https://seoshiro.github.io/noct-3d-preview/review/mobile.mp4",
+      "width": 390,
+      "height": 844,
+      "duration": 27.92
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "checkedAt": "2026-11-05T14:43:13.112Z"
+}
