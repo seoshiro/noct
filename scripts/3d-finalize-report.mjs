@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+const performance=JSON.parse(fs.readFileSync('evidence/3d/performance.json','utf8'));
+const fmt=x=>x.toFixed(1);
+const row=(r,label)=>`| ${label} | ${r.samples} | ${fmt(r.frameIntervalMs.median)} ms | ${fmt(r.frameIntervalMs.p95)} ms | ${fmt(r.frameIntervalMs.max)} ms | ${r.frameIntervalMs.over33ms} | ${fmt(r.renderSubmissionMs.p95)} ms |`;
+let report=fs.readFileSync('docs/3d/RESULT.md','utf8');
+report=report.replace(/\| Desktop[^\n]+/,row(performance.runs[0],'Desktop 1440×1000, DPR 1')).replace(/\| Mobile emulation[^\n]+/,row(performance.runs[1],'Mobile emulation 390×844'));
+report=report.replace('Scroll placement and user rotation use separate transform groups.','Scroll placement and user rotation use separate transform groups. HTML controls and the touch hit area follow the projected live mesh bounds; only the nearest section owns them, and inactive duplicates are inert.');
+fs.writeFileSync('docs/3d/RESULT.md',report);
+let review=fs.readFileSync('docs/3d/review.html','utf8');
+review=review.replace(/p95 интервала кадра [\d,.]+ мс/,`p95 интервала кадра ${fmt(performance.runs[0].frameIntervalMs.p95).replace('.',',')} мс`);
+fs.writeFileSync('docs/3d/review.html',review);
+console.log(JSON.stringify(performance.runs.map(({rawFrameIntervals,rawRenderSubmission,...r})=>r),null,2));

@@ -24,7 +24,7 @@ The Blender source uses physical transmission materials. The browser uses a tran
 
 ## Interaction and verification
 
-The same scene and loaded asset span introduction, opening, selection and samples. Scroll placement and user rotation use separate transform groups. Current yaw, cap, scent and selection survive panels, language switches and scroll returns. Desktop cap and pump mesh picking were exercised directly. HTML actions duplicate the ritual, and notes/cart never require completing it.
+The same scene and loaded asset span introduction, opening, selection and samples. Scroll placement and user rotation use separate transform groups. HTML controls and the touch hit area follow the projected live mesh bounds; only the nearest section owns them, and inactive duplicates are inert. Current yaw, cap, scent and selection survive panels, language switches and scroll returns. Desktop cap and pump mesh picking were exercised directly. HTML actions duplicate the ritual, and notes/cart never require completing it.
 
 Eight browser scenario tests pass: actual mesh ritual and focus return; drag/inertia/reset and rapid interruptions; sizes/cart/quantity/language/refresh/demo checkout; all scents and three different samples; reduced motion/static fallback; context loss and film pause; keyboard rotation/rapid scroll returns and a settled idle loop; HTML controls following the bottle between sections. Six domain tests validate malformed storage, merging, totals, removal, quantity limits and unique sample sets. `scripts/3d-mobile-audit.mjs` separately exercises native CDP touch gestures and ten EN/RU layouts from 320 to 1920 px. No horizontal overflow, replacement characters or browser page errors were found.
 
@@ -36,8 +36,8 @@ Windows laptop, AMD Ryzen 5 7535HS, Chrome **156.0.8078.76** headless, ANGLE Dir
 
 | Run | Samples during movement | Median frame interval | p95 | Maximum | Frames over 33.34 ms | p95 CPU render submission |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Desktop 1440×1000, DPR 1 | 1087 | 6.9 ms | 7.3 ms | 14.1 ms | 0 | 1.3 ms |
-| Mobile emulation 390×844 | 867 | 7.0 ms | 7.1 ms | 7.3 ms | 0 | 0.6 ms |
+| Desktop 1440×1000, DPR 1 | 1021 | 7.0 ms | 14.1 ms | 41.7 ms | 1 | 1.1 ms |
+| Mobile emulation 390×844 | 1069 | 7.0 ms | 7.1 ms | 34.9 ms | 1 | 0.6 ms |
 
 These are requestAnimationFrame intervals during a continuous interaction, not a claim about physical screen presentation or GPU execution time. The submission measure is CPU time around `renderer.render`. Raw samples, draw calls (10) and submitted triangles (40,936, including the glow plane) are preserved in [performance.json](../../evidence/3d/performance.json). Idle scenes stop requesting frames; hidden pages and film playback stop the heavy loop.
 
